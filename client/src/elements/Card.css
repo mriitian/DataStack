@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #28223f;
+  font-family: Montserrat, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+h6 {
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.card-container {
+  background-color: #231e39;
+  border-radius: 5px;
+  border: 1px solid aqua;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+  color: #b3b8cd;
+  padding: 30px 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 250px;
+  max-width: 100%;
+  text-align: center;
+}
+.card-container .pro {
+  color: #231e39;
+  background-color: #febb0b;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+.card-container .proId {
+  color: #231e39;
+  background-color: #febb0b;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+.card-container .round {
+  border: 1px solid #03bfcb;
+  border-radius: 50%;
+  padding: 7px;
+}
+button.primary {
+  background-color: #03bfcb;
+  border: 1px solid #03bfcb;
+  border-radius: 5px;
+  color: #231e39;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+button.primary.ghost {
+  background-color: transparent;
+  color: #02899c;
+}
+.skills {
+  background-color: #1f1a36;
+  text-align: left;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.skills ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skills ul li {
+  border: 1px solid #2d2747;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 12px;
+  margin: 0 7px 7px 0;
+  padding: 7px;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.user-line {
+  overflow-x: scroll;
+  padding: 20px;
+}
+.user-line::-webkit-scrollbar {
+  display: none;
+}
+.load-more {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.team-carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+}
+.team-carousel::-webkit-scrollbar {
+  display: none;
+}
+.team-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #0317cb25;
+  gap: 20px;
+  border: 1px solid aqua;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 90%;
+}
+.teams-container {
+  margin: 20px 0;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+.tooltip-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.nav-link {
+  color: #03bfcb !important;
+}
+.nav-tabs .nav-link.active {
+  color: black !important;
+}

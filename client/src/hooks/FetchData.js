@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseurl = "https://heliverse-server-2.onrender.com/";
+const baseurl = "http://localhost:3000/";
 
 export const Home = async (page, limit, fullName) => {
   try {
@@ -17,7 +17,7 @@ export const Home = async (page, limit, fullName) => {
 
 export const Attr = async () => {
   try {
-    const response = await axios.get(`${baseurl}/attribute`);
+    const response = await axios.get(`${baseurl}attribute`);
     return response.data;
   } catch (error) {
     console.error("Error fetching data:", error);

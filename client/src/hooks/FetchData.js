@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseurl = "http://localhost:3000/";
+const baseurl = "https://heliverse-server-2.onrender.com/";
 
 export const Home = async (page, limit, fullName) => {
   try {

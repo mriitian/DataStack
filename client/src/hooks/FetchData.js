@@ -1,9 +1,11 @@
 import axios from "axios";
 
+const baseurl = "https://heliverse-server-2.onrender.com/";
+
 export const Home = async (page, limit, fullName) => {
   try {
     const response = await axios.get(
-      `http://localhost:3000/api/users?page=${page}&limit=${limit}&fullname=${fullName}`
+      `${baseurl}api/users?page=${page}&limit=${limit}&fullname=${fullName}`
     );
     console.log(response.data);
     return response.data;
@@ -15,7 +17,7 @@ export const Home = async (page, limit, fullName) => {
 
 export const Attr = async () => {
   try {
-    const response = await axios.get("http://localhost:3000/attribute");
+    const response = await axios.get(`${baseurl}/attribute`);
     return response.data;
   } catch (error) {
     console.error("Error fetching data:", error);
@@ -26,7 +28,7 @@ export const Attr = async () => {
 export const AllUser = async (fullName) => {
   try {
     const response = await axios.get(
-      `http://localhost:3000/api/allusers?fullname=${fullName}`
+      `${baseurl}api/allusers?fullname=${fullName}`
     );
     console.log(response.data);
     return response.data;
@@ -38,7 +40,7 @@ export const AllUser = async (fullName) => {
 
 export const Teams = async () => {
   try {
-    const response = await axios.get(`http://localhost:3000/api/teams`);
+    const response = await axios.get(`${baseurl}api/teams`);
     console.log(response.data);
     return response.data;
   } catch (error) {
@@ -50,7 +52,7 @@ export const Teams = async () => {
 export const DeleteUser = async (userId) => {
   try {
     const response = await axios.delete(
-      `http://localhost:3000/api/users/${userId}`
+      `${baseurl}api/users/${userId}`
     );
     console.log(response.data);
     return response.data;
@@ -63,7 +65,7 @@ export const DeleteUser = async (userId) => {
 export const UpdateUser = async (userId, userData) => {
   try {
     const response = await axios.put(
-      `http://localhost:3000/api/users/${userId}`,
+      `${baseurl}api/users/${userId}`,
       userData
     );
     console.log(response.data);

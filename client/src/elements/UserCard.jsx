@@ -146,14 +146,7 @@ export default function UserCard({
                 setShowEdit={setShowEdit}
               />{" "}
             </Modal.Body>
-            <Modal.Footer>
-              <Button variant="secondary" onClick={handleCloseEdit}>
-                Close
-              </Button>
-              <Button variant="primary" onClick={handleCloseEdit}>
-                Save Changes
-              </Button>
-            </Modal.Footer>
+           
           </Modal>
         </div>
       </div>
